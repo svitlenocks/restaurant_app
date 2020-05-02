@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_02_111759) do
+ActiveRecord::Schema.define(version: 2020_05_02_115825) do
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.decimal "price", default: "0.0"
+    t.boolean "dairy_free", default: false
+    t.boolean "gluten_free", default: false
+    t.boolean "kosher", default: false
+    t.boolean "peanut_free", default: false
+    t.boolean "vegan", default: false
+    t.boolean "vegeterian", default: false
+    t.boolean "available", default: false
+    t.boolean "catering", default: false
+    t.boolean "featured", default: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

@@ -37,3 +37,7 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Exclude:
     - Gemfile
+
+Metrics/MethodLength:
+  Exclude: 
+    - db/migrate/*
