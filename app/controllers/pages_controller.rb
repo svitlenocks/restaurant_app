@@ -5,11 +5,17 @@ class PagesController < ApplicationController
     @page = __method__.to_s
   end
 
-  def info
-    @page = __method__.to_s
+  def more_info
+    @page = __method__.to_s.update_page_name
   end
 
   def catering
     @page = __method__.to_s
+  end
+
+  private
+
+  def update_page_name
+    gsub(/_/, " ")
   end
 end
