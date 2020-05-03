@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "info", to: "pages#info"
   get "catering", to: "pages#catering"
+
+  get "menu", to: "menu#index"
 end
