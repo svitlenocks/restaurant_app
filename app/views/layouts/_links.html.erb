@@ -1,5 +1,5 @@
 <% navigation_links_options.each do |title, path| %>
   <h5 class="link-container">
-    <%= link_to title.capitalize, path, class: "#{"active" if @page == title}" %>
+    <%= link_to title.titleize, path, class: "link #{"active" if @page == title}" %>
   </h5>
 <% end %>

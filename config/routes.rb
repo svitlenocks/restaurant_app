@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   root to: "pages#home"
-  get "info", to: "pages#info"
+  get "info", to: "pages#more_info"
   get "catering", to: "pages#catering"
 
   get "menu", to: "menu#index"

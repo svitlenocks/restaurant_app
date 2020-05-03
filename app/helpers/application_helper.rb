@@ -6,8 +6,12 @@ module ApplicationHelper
       ["home", root_path],
       ["menu", menu_path],
       ["catering", catering_path],
-      ["more info", info_path],
-      ["customer reviews", "#"]
+      ["more_info", info_path],
+      ["customer_reviews", "#"]
     ]
+  end
+
+  def titleize
+    gsub(/_/, " ").capitalize
   end
 end
