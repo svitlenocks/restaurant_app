@@ -33,6 +33,7 @@ gem "solargraph"
 gem "devise"
 gem "simple_form"
 gem "better_errors", :group => :development
+gem "ffaker", :group => :development
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
